@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+<listener>
+    <listener-class>
+        com.sun.xml.ws.transport.http.servlet.WSServletContextListener
+    </listener-class>
+</listener>
+
+public static void main(String[] args) {
+    Endpoint.publish("http://localhost:8808/HelloService", new Hello());
+}
+-->
+<endpoints xmlns='http://java.sun.com/xml/ns/jax-ws/ri/runtime' version='2.0'>
+    <endpoint name='ServiceProviderFacade'
+              implementation='net.cloudkit.service.provider.interfaces.ServiceProviderFacadeImpl'
+              url-pattern='/services'/>
+</endpoints>
